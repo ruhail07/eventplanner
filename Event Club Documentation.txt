@@ -1,0 +1,12 @@
+Event Club
+
+Welcome to Event Club, your go to destination for discovering and organizing events. The objective of my project is to develop a user-friendly website that will make event management experience convenient for both organizers and attendees. Through a simple yet smooth and easy navigation and dynamic event categorization, users can easily find and engage with events of interest. With a focus on inclusivity and celebration, Event Club brings people together to commemorate special occasions and moments that matter. Whether it's a music night, food and drinks gathering, party, or any other event, we strive to provide a platform for shared experiences and meaningful connections.
+
+HTML Structure
+The HTML structure of the Event Club website includes essential elements such as headers, main content areas, navigation menus, and footers. Each category page (Music Night, Food and Drinks, Party, Others) follows a consistent layout, ensuring a cohesive user experience across the site. Semantic HTML5 elements are utilized to improve accessibility and search engine optimization.
+
+CSS Styling
+CSS stylesheets are used to enhance the visual appeal and responsiveness of the website. A cohesive color palette and responsive design principles are employed to create an organized and visually appealing interface. Styles are modularized to ensure easy maintenance and scalability. Flexbox and grid layouts are utilized for efficient positioning and alignment of elements, while media queries enable the website to adapt seamlessly to various screen sizes and devices.
+
+JavaScript Functionality
+JavaScript is the backbone of the Event Club website, providing essential functionality and interactivity. Key functionalities include event creation, editing, deletion, and dynamic loading of events based on categories. Event listeners are used to handle user interactions such as voting for events and submitting event forms. LocalStorage is leveraged for data persistence, ensuring that events remain accessible even after page refreshes. The use of modern JavaScript features and best practices ensures a smooth and responsive user experience.

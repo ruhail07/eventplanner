@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+body {
+    background-image: url('new-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.75;
+}
+
+#homepage-content {
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+}
+
+#nav {
+    text-align: center;
+    background: transparent;
+    font-size: 18px;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: 0.5em;
+}
+
+#nav ul li:first-child {
+    margin-left: 0;
+}
+
+#nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85em;
+    padding: 0.5em 1em;
+    transition: color 0.3s ease;
+}
+
+#nav ul li a:hover {
+    color: gold;
+}
+
+#nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0.25em 0;
+    z-index: 1000;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+#nav ul li:hover ul {
+    display: block;
+}
+
+#nav ul li ul li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li ul li a {
+    color: #ffffff;
+    font-size: 0.75em;
+    padding: 0.25em 0.75em;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+#nav ul li ul li a:hover {
+    background: gold;
+    color: #212529;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: gold;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
+
+form input[type="submit"] {
+    background-color: #b1d830;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input, textarea {
+    background: #333;
+    color: #fff;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background: gold;
+    color: #333;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffc107;
+}
+
+#event-list {
+    margin-bottom: 2em;
+    
+}
+
+#event-list .event {
+    background: transparent;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+#categories {
+    text-align: center;
+}
+
+#categories a {
+    margin: 0 1em;
+    color: gold;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+#categories a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+    font-size: 15px;
+}
+
+#footer .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+#footer .social-media li {
+    display: inline;
+    margin: 0 0.5em;
+}
+
+#footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .social-media a:hover {
+    color: gold;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: gold;
+}
+
+h3 {
+    color: #f0ad4e;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#post-event-form {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#post-event-form label,
+#post-event-form input,
+#post-event-form select,
+#post-event-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#post-event-form input,
+#post-event-form select,
+#post-event-form textarea {
+    background: #333;
+    border: 1px solid #444;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#post-event-form input:focus,
+#post-event-form select:focus,
+#post-event-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+#post-event-form input[type="submit"] {
+    background: gold;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+#post-event-form input[type="submit"]:hover {
+    background: #f0ad4e;
+}
+
+.event-detail {
+    background-color: rgba(30, 20, 20, 0.8); 
+    border-radius: 10px; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    color: #fff; 
+}
+
+.vote-btn {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #f44336; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.scroll-element {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.6s ease-out;
+}
+
+.scroll-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

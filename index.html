@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Event Club</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <div id="logo">
+                <h1><a href="index.html">Event Club</a></h1>
+            </div>
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Events</a>
+                        <ul>
+                            <li><a href="music_night.html">Music Night</a></li>
+                            <li><a href="food_and_drinks.html">Food and Drinks</a></li>
+                            <li><a href="party.html">Party</a></li>
+                            <li><a href="others.html">Others</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Content -->
+        <section id="content">
+            <div class="container">
+                <h2 class="scroll-element">Welcome to Event Club</h2>
+                <form id="post-event-form" class="scroll-element">
+                    <label for="event-name">Event Title:</label><br>
+                    <input type="text" id="event-name" name="event-name"><br>
+
+                    <label for="category">Category:</label><br>
+                    <select id="category" name="category">
+                        <option value="music-night">Music Night</option>
+                        <option value="food-drinks">Food and Drinks</option>
+                        <option value="party">Party</option>
+                        <option value="others">Others</option>
+                    </select><br>
+
+                    <label for="event-description">Event Description:</label><br>
+                    <textarea id="event-description" name="event-description"></textarea><br>
+
+                    <input type="submit" value="Post Event">
+                </form>
+
+                <div id="event-list">
+                    <h3>Upcoming Events</h3>
+                    <!-- Events will be appended here dynamically -->
+                </div>
+
+                <div id="categories">
+                    <h3>Browse by Category</h3>
+                    <a href="music_night.html">Music Night</a>
+                    <a href="food_and_drinks.html">Food and Drinks</a>
+                    <a href="party.html">Party</a>
+                    <a href="others.html">Others</a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <p>&copy; Event Club 2024. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
